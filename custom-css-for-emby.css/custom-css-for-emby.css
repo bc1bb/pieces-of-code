@@ -1,0 +1,23 @@
+.raised.button-submit.btnHeaderPremiere.headerButton.emby-button {
+	visibility: hidden;
+}
+
+.pageTitle.pageTitleWithLogo.pageTitleWithDefaultLogo {
+	background-image: url("https://cdn.discordapp.com/attachments/529655165884694528/692499418913439785/Netflix_logo.png");
+}
+
+.raised.button-submit.block.emby-button {
+	background-image: url("https://picsum.photos/778/44.jpg?random=1&blur");
+	color: white;
+	border-radius: 10rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
+
+.raised.cancel.block.emby-button {
+	background-image: url("https://picsum.photos/778/44.jpg?random=1&blur&grayscale");
+	color: #313235;
+	border-radius: 10rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+}
