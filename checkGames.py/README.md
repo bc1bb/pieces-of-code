@@ -10,8 +10,8 @@ from checkGames import *
 portal2 = checkGames(620)
 
 if portal2[2]:
-	print(gameName, "is installed at", installLocation)
+	print(portal2[2], "is installed at", portal2[3])
 else:
-	print(gameId, "is not installed")
+	print(portal2[0], "is not installed")
 ```
 
