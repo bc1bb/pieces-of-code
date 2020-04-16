@@ -1,18 +1,18 @@
-        public static string RandomString64Bytes()
-        {
-            string finalString = "";
+public static string RandomString64Bytes()
+{
+string finalString = "";
 
-            int i = 0;
-            while (i <= 8) 
-            {
-                string randomString = Path.GetRandomFileName();
-                randomString = randomString.Replace(".", "");
-                randomString = randomString.Substring(0, 8);
+int i = 0;
+while (i <= 8)
+{
+    string randomString = Path.GetRandomFileName();
+    randomString = randomString.Replace(".", "");
+    randomString = randomString.Substring(0, 8);
 
-                finalString += randomString;
+    finalString += randomString;
                 
-                i += 1;
-            }
+    i += 1;
+}
             
-            return finalString;
-        }
+return finalString;
+}
