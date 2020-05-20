@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Hiber [File/Link] Client
+# Hiber [File/Link] CLI Client
 # Jus de Patate - 2020
 
 version="1.0"
@@ -19,6 +19,7 @@ file() {
 	echo ""
 }
 
+# shellcheck disable=SC2143
 if [ -z "$1" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
 	echo "Hiber Client for CLI - Jus de Patate - $version"
 	echo "HiberFile instance is set at $hiberfile"
@@ -27,7 +28,7 @@ if [ -z "$1" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then
 	echo "Please use either a file or an url as command argument"
 elif [ -f "$1" ]; then
 	file "$1"
-elif [ "$(echo "$1" | grep "^.*[\.].*$")" ]; then
+elif [ "$(echo "$1" | grep "^.*[.].*$")" ]; then
 	link "$1"
 else
 	echo "Unrecognized argument"
