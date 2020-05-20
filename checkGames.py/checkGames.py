@@ -25,7 +25,11 @@ def checkGames(gameId):
         # Checking if we can get the game name from the ID using Reg
 
         if isInstalled == 1:
-            key = winreg.OpenKeyEx(LOCAL_MACHINE, r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App " + gameId)
+            key = winreg.OpenKeyEx(
+                LOCAL_MACHINE,
+                r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App "
+                + gameId,
+            )
             installLoc = winreg.QueryValueEx(key, "InstallLocation")[0]
             # Here we get installLocation from red LOCAL_MACHINE
 
