@@ -56,10 +56,10 @@ def uploadFile(file):
         print(fileLink)
 
 
-if not len(sys.argv) > 1 or sys.argv[1] == "--help" or sys.argv[1] == "-h":
-    print("Hiber Client for CLI - Jus de Patate - $version")
-    print("HiberFile instance is set at $hiberfile")
-    print("HiberLink instance is set at $hiberlink")
+if len(sys.argv) < 2 or sys.argv[1] == "--help" or sys.argv[1] == "-h":
+    print("Hiber Client for CLI - Jus de Patate - " + version)
+    print("HiberFile instance is set at " + hiberfile)
+    print("HiberLink instance is set at " + hiberlink)
     print("")
     print("Please use either a file or an url as command argument")
 elif os.path.exists(sys.argv[1]):

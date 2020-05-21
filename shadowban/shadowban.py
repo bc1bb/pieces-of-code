@@ -11,7 +11,7 @@ except ImportError:
     # Python 2.x
     from urllib2 import Request, urlopen
 
-if not len(sys.argv) > 1 or sys.argv[1] == "--help" or sys.argv[1] == "-h":
+if len(sys.argv) < 2 or sys.argv[1] == "--help" or sys.argv[1] == "-h":
     print("Missing one argument (should be in the form shadowban @user)")
 else:
     screenName = sys.argv[1]
