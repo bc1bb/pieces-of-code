@@ -9,9 +9,10 @@ import sys
 
 try:
   from reverence import blue
-except:
+except ImportError:
   raise ImportError("Reverence is not installed, install it from https://github.com/ntt/reverence")
-  exit
+except RuntimeError:
+  raise ImportError("Reverence requires PyYaml, make sure it's installed")
 
 if len(sys.argv) >= 2:
   arg1 = sys.argv[1]
