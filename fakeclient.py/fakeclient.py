@@ -22,7 +22,7 @@ if len(sys.argv) >= 2:
   elif arg1 == "singularity" or arg1 == "sisi":
     addr = "singularity.servers.eveonline.com"
 
-  elif arg1 == "serenity":
+  elif arg1 == "serenity" or arg1 == "cn" or arg1 == "china":
     addr = "42.186.79.5"
 
   elif arg1 == "buckingham":
