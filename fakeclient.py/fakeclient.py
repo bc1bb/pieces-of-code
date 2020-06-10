@@ -99,10 +99,12 @@ data = s.recv(size)
 print "Marshalled data:", data, "\n"
 # here we output raw data sent by server
 
-unmarshalled = blue.marshal.Load(data)
-print "Unmarshalled data:", unmarshalled, "\n"
-# and here we unmarshal it and output it
-
+try:
+  unmarshalled = blue.marshal.Load(data)
+  print "Unmarshalled data:", unmarshalled, "\n"
+  # and here we unmarshal it and output it
+except EOFError:
+  raise Exception("Looks like " + addr + " sent bad data, maybe it's daily downtime")
 #(birthday, machoversion, usercount, version, build, codename)
 # here is the tuple that the server should be sending us
 # at least EVEmu on Crucible (apparently still valid on all servers in 2020)
