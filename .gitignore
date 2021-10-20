@@ -1,0 +1,9 @@
+#JetBrains's bullshit
+# i like to open this entire repo as one project sometimes lol
+CMakeLists.txt
+.idea/
+.vscode/
+cmake-build-debug/
+node_modules/
+package-lock.json
+conv
