@@ -18,7 +18,10 @@ else:
     apiUrl = "https://shadowban.eu/.api/" + screenName
 
     r = Request(apiUrl)
-    r.add_header("User-Agent", "Mozilla/5.0 (X11; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0")
+    r.add_header(
+        "User-Agent",
+        "Mozilla/5.0 (X11; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0",
+    )
 
     apiJson = urlopen(r)
     apiJson = json.loads(apiJson.read())

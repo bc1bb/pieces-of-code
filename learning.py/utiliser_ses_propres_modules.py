@@ -24,4 +24,3 @@ module.multipli(5)
 
 
 # an __init__.py file can be created and should have a preparation code for the module that will be executed at every import
-

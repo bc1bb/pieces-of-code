@@ -5,19 +5,3 @@
 .pageTitle.pageTitleWithLogo.pageTitleWithDefaultLogo {
 	background-image: url("https://raw.githubusercontent.com/jusdepatate/pieces-of-code/master/custom-css-for-emby.css/Not_Netflix.png");
 }
-
-.raised.button-submit.block.emby-button {
-	background-image: url("https://picsum.photos/778/44.jpg?random=1&blur");
-	color: white;
-	border-radius: 10rem;
-	text-transform: uppercase;
-	letter-spacing: .25rem;
-}
-
-.raised.cancel.block.emby-button {
-	background-image: url("https://picsum.photos/778/44.jpg?random=1&blur&grayscale");
-	color: #313235;
-	border-radius: 10rem;
-	text-transform: uppercase;
-	letter-spacing: .25rem;
-}

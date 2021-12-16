@@ -1,6 +1,7 @@
 # Pieces of code
 All Python code available here respects the [black code style](https://github.com/psf/black)
 - [`checkGames.py`](checkGames.py), Python3 function to get *local* info about a given steam game, available only on Windows [MORE](checkGames.py/README.md),
+- [`cours`](cours), list of things I wrote during classes,
 - [`custom-css-for-emby.css`](custom-css-for-emby.css), Custom CSS that will hide the "Get Emby Premiere" button and will change the logo to "Not Netflix" [MORE](custom-css-for-emby.css/README.md),
 - [`darkmode.html`](darkmode.html), example usage of `prefers-color-scheme: dark` (dark mode),
 - [`fakeclient.py`](fakeclient.py), tiny Python2 tool that will connect to any EVE Online server and scrap info from it [MORE](fakeclient.py/README.md),
