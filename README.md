@@ -11,6 +11,7 @@ All Python code available here respects the [black code style](https://github.co
 - [`learning.py`](learning.py): collection of the Python3 scripts I wrote when I started learning Python,
 - [`multicall-bin-example.c`](multicall-bin-example.c): example of basic multi call binary in C/C++,
 - [`RandomString64Bytes.cs`](RandomString64Bytes.cs): Csharp function that will return a random 64 Bytes string [MORE](RandomString64Bytes.cs/README.md),
+- [`socketServer.py`](socketServer.py): Very simple socket server for testing purposes [MORE](socketServer.py/README.md),
 - [`shadowban`](shadowban): Tiny shell/Python 2/3 tool to check if you are shadow banned by twitter,
 - [`simpleKeygen`](simpleKeygen): Very simple educational projet of keygen for Windows 95, NT 4.0 and Office 97,
 - [`telegram-ssh.sh`](telegram-ssh.sh): Get a warning on very sucessful login on your server [MORE](telegram-ssh.sh/README.md).
