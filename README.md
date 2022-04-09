@@ -1,7 +1,6 @@
 # Pieces of code
 All Python code available here respects the [black code style](https://github.com/psf/black)
-- [`checkGames.py`](checkGames.py): Python3 function to get *local* info about a given steam game, available only on Windows [MORE](checkGames.py/README.md),
-- [`cours`](cours), list of things I wrote during classes,
+- [`checkGames.py`](checkGames.py): Python3 function to get *local* info about a given steam game, available only on Windows [MORE](checkGams.py/README.md),
 - [`custom-css-for-emby.css`](custom-css-for-emby.css): Custom CSS that will hide the "Get Emby Premiere" button and will change the logo to "Not Netflix" [MORE](custom-css-for-emby.css/README.md),
 - [`darkmode.html`](darkmode.html): example usage of `prefers-color-scheme: dark` (dark mode),
 - [`fakeclient.py`](fakeclient.py): tiny Python2 tool that will connect to any EVE Online server and scrap info from it [MORE](fakeclient.py/README.md),
@@ -15,3 +14,11 @@ All Python code available here respects the [black code style](https://github.co
 - [`shadowban`](shadowban): Tiny shell/Python 2/3 tool to check if you are shadow banned by twitter,
 - [`simpleKeygen`](simpleKeygen): Very simple educational projet of keygen for Windows 95, NT 4.0 and Office 97,
 - [`telegram-ssh.sh`](telegram-ssh.sh): Get a warning on very sucessful login on your server [MORE](telegram-ssh.sh/README.md).
+
+## `cours`
+Things I have written for school (sorted by time invested):
+- [`TkDiff`](cours/python/tkdiff/): Graphical interface for `difflib.unified_diff(f1, f2, lineterm=nl)` in Python+Tk [MORE](cours/python/tkdiff/README.md),
+- [France IOI](cours/python/franceioi/): All scripts I have written for France IOI in Python,
+- [Calculatrice élémentaire](cours/php/tp6.php): Calculator done with only one input in PHP,
+- [`convertisseur.cpp`](cours/convertisseur.cpp/convertisseur.cpp): CLI Currency Converter in C++,
+- [premier pas en PHP](cours/php/tp5.php): Calcule la moyenne de 100 nombres aléatoires en PHP.
