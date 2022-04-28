@@ -23,7 +23,4 @@ We thought it would be fun to create a graphical interface for `difflib.unified_
 
 Whenever `DiffWindow` is called, a Tkinter window is created, and another thread for `DiffWindow.diffServer()` is started by it, opening port `42000`.
 
-## Known problems
-This wasn't supposed to be a huge project, just a simple basic graphical project, so I didn't put a huge effort into it. 
-
-Communication outside of sending to your own client/server doesn't really work for some kind of black magic reason
+**Windows: Communication works only when you start TkDiff as admin**
