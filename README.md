@@ -3,6 +3,7 @@ All Python code available here respects the [black code style](https://github.co
 - [`checkGames.py`](checkGames.py): Python3 function to get *local* info about a given steam game, available only on Windows [MORE](checkGams.py/README.md),
 - [`custom-css-for-emby.css`](custom-css-for-emby.css): Custom CSS that will hide the "Get Emby Premiere" button and will change the logo to "Not Netflix" [MORE](custom-css-for-emby.css/README.md),
 - [`darkmode.html`](darkmode.html): example usage of `prefers-color-scheme: dark` (dark mode),
+- [`discordWordCounter.py`](discordWordCounter.py): Discord bot that gets triggerred whenever any user sends a certain string into a Discord guild [MORE](discordWordCounter.py/README.md),
 - [`fakeclient.py`](fakeclient.py): tiny Python2 tool that will connect to any EVE Online server and scrap info from it [MORE](fakeclient.py/README.md),
 - [`freereseau.sh`](freereseau.sh): Petit utilitaire pour vérifier l'état du réseau de DSLAMs Free [MORE](freereseau.sh/README.md),
 - [`get-last-github-release-source`](get-last-github-release-source): Tiny shell/Python 2/3 function will get the link of the sources of the last GitHub release of a certain repo,
