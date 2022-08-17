@@ -97,7 +97,7 @@ class DiffWindow:
         self.f1 = tkinter.filedialog.askopenfilename(
             title="Select primary file",
             initialdir=os.getcwd(),
-            filetypes=[("All files (*.*)", "*.*"), ("Diff files (*.diff)", "*.diff")],
+            filetypes=[("All Files", "*.*"), ("Diff files (*.diff)", "*.diff")],
         )
         # Select master file
 
@@ -109,7 +109,7 @@ class DiffWindow:
         self.f2 = tkinter.filedialog.askopenfilename(
             title="Select secondary file",
             initialdir=os.getcwd(),
-            filetypes=[("All files (*.*)", "*.*")],
+            filetypes=[("All Files", "*.*")],
         )
         # Select slave file
         return
