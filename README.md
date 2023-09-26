@@ -8,6 +8,7 @@ All Python code available here respects the [black code style](https://github.co
 - [`freereseau.sh`](freereseau.sh): Petit utilitaire pour vérifier l'état du réseau de DSLAMs Free [MORE](freereseau.sh/README.md),
 - [`get-last-github-release-source`](get-last-github-release-source): Tiny shell/Python 2/3 function will get the link of the sources of the last GitHub release of a certain repo,
 - [`hiber`](hiber): Python3/shell script client for Hiber services ([HiberFile](https://hiberfile.com) and [HiberLink](https://hiber.link)),
+- [`javaCours`](javaCours): Collection of Java files made during classes,
 - [`learning.py`](learning.py): Collection of Python3 scripts I wrote when I started learning Python,
 - [`mariahelper.sh`](mariahelper): Shell script for MySQL/MariaDB allowing easy user creation and other useful things, 
 - [`multicall-bin-example.c`](multicall-bin-example.c): example of basic multi call binary in C/C++,
@@ -17,8 +18,8 @@ All Python code available here respects the [black code style](https://github.co
 - [`simpleKeygen`](simpleKeygen): Very simple educational projet of keygen for Windows 95, NT 4.0 and Office 97,
 - [`telegram-ssh.sh`](telegram-ssh.sh): Get a warning on very sucessful login on your server [MORE](telegram-ssh.sh/README.md).
 
-## `cours`
-Things I have written for school (sorted by time invested):
+## [`lycee`](lycee)
+Things I have written in last year of HS (sorted by time invested):
 - [`TkDiff`](cours/python/tkdiff/): Graphical interface for `difflib.unified_diff(f1, f2, lineterm=nl)` in Python+Tk [MORE](cours/python/tkdiff/README.md),
 - [France IOI](cours/python/franceioi/): All scripts I have written for France IOI in Python,
 - [Calculatrice élémentaire](cours/php/tp6.php): Calculator done with only one input in PHP,
