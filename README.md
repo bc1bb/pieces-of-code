@@ -20,8 +20,8 @@ All Python code available here respects the [black code style](https://github.co
 
 ## [`lycee`](lycee)
 Things I have written in last year of HS (sorted by time invested):
-- [`TkDiff`](cours/python/tkdiff/): Graphical interface for `difflib.unified_diff(f1, f2, lineterm=nl)` in Python+Tk [MORE](cours/python/tkdiff/README.md),
-- [France IOI](cours/python/franceioi/): All scripts I have written for France IOI in Python,
-- [Calculatrice élémentaire](cours/php/tp6.php): Calculator done with only one input in PHP,
-- [`convertisseur.cpp`](cours/convertisseur.cpp/convertisseur.cpp): CLI Currency Converter in C++,
-- [premier pas en PHP](cours/php/tp5.php): Calcule la moyenne de 100 nombres aléatoires en PHP.
+- [`TkDiff`](lycee/python/tkdiff/): Graphical interface for `difflib.unified_diff(f1, f2, lineterm=nl)` in Python+Tk [MORE](cours/python/tkdiff/README.md),
+- [France IOI](lycee/python/franceioi/): All scripts I have written for France IOI in Python,
+- [Calculatrice élémentaire](lycee/php/tp6.php): Calculator done with only one input in PHP,
+- [`convertisseur.cpp`](lycee/convertisseur.cpp/convertisseur.cpp): CLI Currency Converter in C++,
+- [premier pas en PHP](lycee/php/tp5.php): Calcule la moyenne de 100 nombres aléatoires en PHP.
