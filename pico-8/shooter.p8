@@ -14,8 +14,7 @@ end
 function _update60()
 	if gameover then
 		if (btn(❎)) then
-		 p={x=60,y=110,hp=10}
-		 gameover = false
+		 _init()
 		end
 		return
 	end
@@ -38,6 +37,10 @@ function _update60()
 	-- stat(95) rtc second
 	if (lastcheck != stat(95)) then
   lastcheck=stat(95)
+  
+  	for i in all(enn) do
+		  e_shoot(i.x,i.y)
+  	end
   
 		if (stat(95) % spawnspeed  == 0) then
 			e_spawn()
