@@ -2,13 +2,29 @@ pico-8 cartridge // http://www.pico-8.com
 version 41
 __lua__
 function _init()
-	p={x=60,y=110,hp=10}
+	p={x=60,y=110,hp=3}
 	bullets={}
 	enn={}
 	enn_b={}
+	lastcheck=-1
+	spawnspeed=1
+	gameover=false
 end
 
 function _update60()
+	if gameover then
+		if (btn(❎)) then
+		 p={x=60,y=110,hp=10}
+		 gameover = false
+		end
+		return
+	end
+	
+	if p.hp == 0 then
+	 gameover = true
+	 return
+	end
+	
  if (btn(➡️) and p.x<120) p.x+=1
  if (btn(⬅️) and p.x>0) p.x-=1
  if (btn(⬆️) and p.y>0) p.y-=1
@@ -16,23 +32,47 @@ function _update60()
 	if (btnp(❎)) shoot()
 	
 	update_bullets()
-	e_spawn()
 	update_e()
+	update_eb()
+
+	-- stat(95) rtc second
+	if (lastcheck != stat(95)) then
+  lastcheck=stat(95)
+  
+		if (stat(95) % spawnspeed  == 0) then
+			e_spawn()
+		end
+	end
 end
 
 function _draw()
 	cls()
 
+ if (gameover) then
+  return
+ end
+
 	spr(1,p.x,p.y)
 	
 	for i in all(bullets) do
-		spr(17,i.x,i.y)
+		if i.c then
+			del(bullets,i)
+		else
+			if (i.y<=0) then del(bullets,i)
+			else spr(17,i.x,i.y)
+			end
+		end
 	end
+	
 	for i in all(enn_b) do
 		spr(18,i.x,i.y)
 	end
+	
 	for i in all(enn) do
-		spr(2,i.x,i.y)
+	 if i.hp == 0 then
+	 	del(enn,i)
+	 else spr(2,i.x,i.y)
+	 end
 	end
 end
 -->8
@@ -40,6 +80,7 @@ end
 
 function shoot()
   b = {
+   c=false,
 			x=p.x,
 			y=p.y
 		}
@@ -50,6 +91,13 @@ end
 function update_bullets()
 	for b in all(bullets) do
 		b.y-=1
+		
+		for e in all(enn) do
+			if (coll(b,e)) then
+				b.c = true
+				e.hp-=1
+			end
+		end
 	end
 end
 -->8
@@ -58,6 +106,7 @@ end
 function e_spawn()
  if time() % 5 then
 		new_enn = {
+		  hp=1,
 				x=rnd(110),
 				y=rnd(30)
 			}
@@ -68,7 +117,6 @@ function e_spawn()
 end
 
 function e_shoot(ex, ey)
- print(ex)
 	new_eb = {
 			x=ex,
 			y=ey
@@ -77,25 +125,27 @@ function e_shoot(ex, ey)
 end
 
 function update_e()
-	update_eb()
+	-- maybe?
 end
 
 function update_eb()
 	for b in all(enn_b) do
-	 print(b.y)
-		b.y+=3
+		b.y+=1
 		
-		if (coll(b,p)) p.hp-=1
+		if (coll(b,p)) then
+		 del(enn_b,b)
+			p.hp-=1
+		end
 	end
 end
 -->8
 -- collision --
 
 function coll(a,b)
-	 if a.x > b.x + 8
-  or a.y > b.y + 8
-  or a.x + 8 < b.x
-  or a.y + 8 < b.y then
+	 if a.x > b.x + 4
+  or a.y > b.y + 4
+  or a.x + 4 < b.x
+  or a.y + 4 < b.y then
     return false
   else
     return true
