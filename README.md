@@ -11,6 +11,7 @@ All Python code available here respects the [black code style](https://github.co
 - [`javaCours`](javaCours): Collection of Java files made during classes,
 - [`learning.py`](learning.py): Collection of Python3 scripts I wrote when I started learning Python,
 - [`mariahelper.sh`](mariahelper): Shell script for MySQL/MariaDB allowing easy user creation and other useful things, 
+- [`pico-8`](pico-8): Pico 8 games that cannot really be called games,
 - [`multicall-bin-example.c`](multicall-bin-example.c): example of basic multi call binary in C/C++,
 - [`RandomString64Bytes.cs`](RandomString64Bytes.cs): Csharp function that will return a random 64 Bytes string [MORE](RandomString64Bytes.cs/README.md),
 - [`socketServer.py`](socketServer.py): Very simple socket server for testing purposes [MORE](socketServer.py/README.md),
