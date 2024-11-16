@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# ngdissite (github:jusdepatate/shell-tools)
+# a2dissite but for nginx
+
+fatal() {
+  echo "$*"
+  exit 1
+}
+
+if [ "$EUID" -ne 0 ]; then
+    fatal "Please, execute as root."
+fi
+
+if [ "$1" = "" ]; then
+  fatal "No argument found"
+fi
+
+desto="$(echo /etc/nginx/sites-enabled/"$*".conf | sed "s/.conf.conf/.conf/")"
+# little hack in case argument contains .conf (or not)
+
+if [ ! -f "$desto" ]; then
+  fatal "$desto doesn't exist"
+fi
+
+unlink "$desto" || fatal
+
+if [ "$(nginx -t &>/dev/null)" ]; then
+  systemctl restart nginx
+else
+  fatal "$(nginx -t)"
+fi
